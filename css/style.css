@@ -1,0 +1,41 @@
+/* Separación total de estilos */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animaciones CSS */
+.custom-card, .custom-img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform; 
+}
+
+/* ARREGLO PARA LA GALERÍA */
+.custom-img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+/* Efecto Hover para tarjetas y fotos de galería */
+.custom-card:hover, .custom-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2) !important;
+}
+
+/* Ajustes del Carrusel */
+.banner-img {
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* Alertas animadas */
+#exitoAlerta {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
