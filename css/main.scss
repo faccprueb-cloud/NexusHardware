@@ -1,0 +1,10 @@
+/* main.scss - Base de variables para el preprocesador */
+$primary-color: #ffc107; /* Warning Bootstrap */
+$bg-dark: #212529;
+$bg-black: #000000;
+$text-light: #f8f9fa;
+
+body {
+    background-color: $bg-dark;
+    color: $text-light;
+}
