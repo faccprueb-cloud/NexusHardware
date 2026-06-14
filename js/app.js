@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevención de acciones por defecto (Requisito)
+            event.preventDefault(); 
             event.stopPropagation();
 
             let isValid = true;
